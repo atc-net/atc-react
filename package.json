@@ -1,0 +1,96 @@
+{
+  "name": "atc-react",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@fluentui/react": "^8.68.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/react-hooks": "8.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.36",
+    "@types/react": "^18.0.9",
+    "@types/react-datepicker": "^4.3.4",
+    "@types/react-dom": "^18.0.4",
+    "@types/uuid": "8.3.4",
+    "date-fns": "^2.28.0",
+    "react": "^18.1.0",
+    "react-datepicker": "^4.7.0",
+    "react-dom": "^18.1.0",
+    "react-infinite-scroll-hook": "^4.0.2",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.4",
+    "uuid": "8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --env=jsdom",
+    "test:coverageAll": "react-scripts test --coverage --env=jsdom --watchAll",
+    "lint": "npx eslint src --max-warnings 0",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "prefer-const": "warn",
+      "unicode-bom": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/**/*.stories.*"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.0",
+    "@storybook/addon-essentials": "^6.5.0",
+    "@storybook/addon-interactions": "^6.5.0",
+    "@storybook/addon-links": "^6.5.0",
+    "@storybook/builder-webpack5": "^6.5.0",
+    "@storybook/manager-webpack5": "^6.5.0",
+    "@storybook/node-logger": "^6.5.0",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.5.0",
+    "@storybook/testing-library": "^0.0.11",
+    "autoprefixer": "^10.4.7",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "postcss": "^8.4.14",
+    "prop-types": "^15.8.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1"
+  }
+}
